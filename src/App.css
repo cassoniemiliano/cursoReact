@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.card {
+  border: 1px solid white;
+  padding: 10px;
+  width: 15rem;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.container-img {
+  border: 1px solid white;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.container-itemBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.itemBox {
+  border: 1px solid white;
+  padding: 10px;
+  width: 30%;
+  border-radius: 20px;
+}
