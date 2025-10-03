@@ -1,5 +1,12 @@
 import "./App.css";
-import ReactLogo from "./assets/react.svg";
+
+//componentes
+import Card from "./Card.jsx";
+
+//imagenes
+import Espresso from "./assets/espresso.jpg";
+import Latte from "./assets/Latte.jpg";
+import vainillaLate from "./assets/vanillaLate.jpg";
 
 function App() {
   return (
@@ -8,46 +15,27 @@ function App() {
         <h1>Componentes en React</h1>
       </div>
       <div className="container">
-        <div className="card">
-          <p>Nuevo componente de react</p>
-          <div className="container-img">
-            <img src={ReactLogo} />
-          </div>
-          <div className="container-itemBox">
-            <div className="itemBox">precio</div>
-            <div className="itemBox">descrip</div>
-          </div>
-        </div>
-        <div className="card">
-          <p>Nuevo componente de react</p>
-          <div className="container-img">
-            <img src={ReactLogo} />
-          </div>
-          <div className="container-itemBox">
-            <div className="itemBox">precio</div>
-            <div className="itemBox">descrip</div>
-          </div>
-        </div>
-        <div className="card">
-          <p>Nuevo componente de react</p>
-          <div className="container-img">
-            <img src={ReactLogo} />
-          </div>
-          <div className="container-itemBox">
-            <div className="itemBox">precio</div>
-            <div className="itemBox">descrip</div>
-          </div>
-        </div>
-        <div className="card">
-          <p>Nuevo componente de react</p>
-          <div className="container-img">
-            <img src={ReactLogo} />
-          </div>
-          <div className="container-itemBox">
-            <div className="itemBox">precio</div>
-            <div className="itemBox">descrip</div>
-          </div>
-        </div>
+        <Card
+          image={vainillaLate}
+          title={"Vanilla Latte"}
+          price={8000}
+          type={"hot"}
+          rating={4.8}
+        />
+        <Card
+          image={Espresso}
+          title={"Cafe Ezequiel"}
+          price={5500}
+          type={"hot"}
+          rating={9}
+        />
+        <Card
+          image={Latte}
+          title={"Latte"}
+          price={6000}
+          type={"hot"}
+          rating={10}
+        />
       </div>
     </>
   );

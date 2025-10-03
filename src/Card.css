@@ -1,0 +1,103 @@
+/*
+  📝 Aliados de nuestro archivo CSS
+  En los archivos CSS se utiliza el formato kebab-case 
+  (las palabras se separan con guiones, ej: mi-clase-css)
+
+  🎨 Organización y disposición
+  - display: flex / block / grid → define el modo de organización.
+  - flex-direction: row / column → orientación de los elementos en flex.
+  - justify-content: start / center / space-between → alineación horizontal.
+  - align-items: start / center / end → alineación vertical.
+  - gap: espacio entre elementos hijos en flex o grid.
+
+  📏 Tamaños y espacios
+  - margin: espacio exterior (alrededor del elemento).
+  - padding: espacio interior (dentro del elemento).
+  - width / height: ancho y alto fijo.
+  - max-width / min-width / max-height / min-height → límites de tamaño.
+
+  🖼️ Bordes y fondos
+  - border: grosor, tipo y color del borde (ej: 1px solid black).
+  - border-radius: redondeo de esquinas.
+  - background-color: color de fondo.
+  - background-image: imagen de fondo.
+
+  ✍️ Texto
+  - color: color del texto.
+  - font-size: tamaño del texto.
+  - font-weight: grosor de texto (normal, bold, 100–900).
+  - text-align: alineación (left, center, right).
+  - line-height: altura de línea.
+
+  📌 Posicionamiento
+  - position: static / relative / absolute / fixed / sticky.
+    (sirve para mover y ubicar elementos en la pantalla).
+  - top / right / bottom / left: posición cuando se usa relative/absolute.
+
+  🌟 Estilos visuales
+  - box-shadow: sombra de un elemento (ej: 0px 4px 12px rgba(0,0,0,0.2)).
+  - opacity: nivel de transparencia (0 = invisible, 1 = opaco).
+  - cursor: tipo de cursor al pasar (ej: pointer, default).
+
+  📦 Otros útiles
+  - overflow: hidden / scroll / auto → manejo del contenido que se desborda.
+  - z-index: orden de apilado (quién queda delante o detrás).
+*/
+
+.container-card {
+  position: relative;
+  bottom: 150px;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  background: #fefbf6;
+  padding: 25px;
+  margin: 16px;
+  box-shadow: 0px 4px 12px #8d8984;
+  border: 4px groove #8d898428;
+}
+.container-img {
+  width: 100%;
+  height: 15rem;
+}
+.container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.container-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container-info {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.button-add:hover {
+  background-color: #e6821a !important;
+  transform: scale(1.05);
+}
+
+.rating-badge {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 5px #00000033;
+}
