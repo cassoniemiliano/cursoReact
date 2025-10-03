@@ -8,6 +8,8 @@ import Espresso from "./assets/espresso.jpg";
 import Latte from "./assets/Latte.jpg";
 import vainillaLate from "./assets/vanillaLate.jpg";
 
+// 👉 Este es el componente raíz de la aplicación.
+// Se encarga de mostrar el título y renderizar varias "Card" (nuestros productos)
 function App() {
   return (
     <>
@@ -15,6 +17,7 @@ function App() {
         <h1>Componentes en React</h1>
       </div>
       <div className="container">
+        {/* 🎯 Cada Card recibe props distintos para mostrar información única */}
         <Card
           image={vainillaLate}
           title={"Vanilla Latte"}

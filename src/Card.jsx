@@ -2,6 +2,9 @@ import "./Card.css";
 import Text from "./Text.jsx";
 import Button from "./Button.jsx";
 
+// 👉 Este es nuestro componente padre "Card".
+// Recibe props: image, title, price y rating
+// y organiza toda la información de un producto.
 function Card({ image, title, price, rating }) {
   return (
     <div className="container-card">
@@ -33,20 +36,21 @@ function Card({ image, title, price, rating }) {
 }
 
 /*
-  el formato camel Case para los estilos, se puede usar si
-  tus clases CSS se definen en un archivo de JavaScript.
-  (por ejemplo, dentro de un componente de React)
+  ℹ️ Notas para alumnos:
+  - Aquí usamos un objeto "styles" para definir estilos en formato camelCase.
+  - Esto es diferente de los archivos CSS, donde usamos kebab-case.
+  - Los estilos en JS son útiles cuando queremos algo más dinámico.
 */
 
 const styles = {
   textTitle: {
-    fontSize: "30px",
+    fontSize: "20px",
     fontWeight: "bold",
     fontFamily: "Roboto",
   },
 
   textPrice: {
-    fontSize: "20px",
+    fontSize: "15px",
     fontWeight: "bold",
     fontFamily: "Roboto",
   },
@@ -59,20 +63,19 @@ const styles = {
     color: "#ffdba6",
     padding: "5px",
     borderRadius: "8px",
-    fontSize: "18px",
-    width: "50px",
+    fontSize: "16px",
+    width: "35px",
   },
 
   button: {
     borderRadius: "100px",
-    width: 40,
-    height: 40,
+    width: 35,
+    height: 35,
     backgroundColor: "#ff902a",
     color: "#fff",
     border: "none",
     cursor: "pointer",
-    // transition: "#ff902a 0.3s ease",
-    fontSize: "30px",
+    fontSize: "25px",
   },
 };
 
