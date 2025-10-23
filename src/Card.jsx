@@ -25,6 +25,7 @@ function Card({ image, title, price, rating }) {
       <div className="container-info">
         <Text title={"hot"} styles={styles.infoText} />
         <Text title={"cold"} styles={styles.infoText} />
+
         <Button
           labelButton={"+"}
           styles={styles.button}
